@@ -38,3 +38,11 @@ ping google.com
 curl http://localhost:8080
 netstat -tulnp
 
+Important Docker Commands
+-------------------------------
+docker pull nginx
+docker ps -a
+docker run -p 8080:80 nginx
+docker build -t myapp .
+docker logs container
+docker exec -it container bash
