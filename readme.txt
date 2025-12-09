@@ -267,6 +267,7 @@ git branch
 git remote -v
 
 Imp Concepts
+---------------
 
 Branch
 Merge
@@ -279,7 +280,7 @@ Git -> Used to version control code. In Devops work, every change must go throug
 
 #####################################################
 Docker:
-
+--------
 Images
 Containers
 Dockerfile
@@ -300,7 +301,7 @@ are consistent across all environments
 
 #########################################
 Docker file
-
+-----------
 FROM python:3.9
 COPY . /app
 WORKDIR /app
@@ -393,6 +394,7 @@ using Operators and Helm. I build CI/CD automation for API deployments, queue ma
 #########################################################
 
 Monitoring 
+-------------
 Prometheus
 Grafana
 
@@ -407,7 +409,7 @@ alerts for failures or high CPU/memory
 ####################################################
 
 Security (Trivy, Secrets, PSP)
-
+----------------------------
 Enforce container scanning, RBAC, Secrets ecyption, image polocoes and Pod Security standards for secure workloads
 
 
