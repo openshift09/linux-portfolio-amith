@@ -1,6 +1,6 @@
 #############################
-Linux command
-____________________________
+Linux command (A-Z)
+---------------------
 
 ls
 cd
@@ -41,7 +41,6 @@ sudo useradd ---> add users
 sudo usermod -aG docker amit --> add user to group
 su - amit --> switch user
 #############################################
-
 BASH Scripting:
 ---------------
 #! /bin/bash
@@ -53,12 +52,13 @@ bash script.sh --> Run above bash script
 chmod +x script.sh --> make executable
 
 compress: 
-
+--------
 tar -cvf logs.tar /var/log ---> create tar files
 tar -xvf logs.tar --> extracts tar file
 zip -r archive.zip folder --> zip
 
 SSH commands:
+-------------
 
 ssh user@ip --> connect to server
 scp file.txt user@ip:/tmp/ --> copy file to server
@@ -67,10 +67,10 @@ scp file.txt user@ip:/tmp/ --> copy file to server
 Linux commands--> Log Analysis, Service Management, Debugging container issues, checking network ports and writing automation scripts.
 
 Categorized as per Uses:
-
+----------------------
 
 User Management
-
+---------------
 useradd: Create a new user account.
 userdel: Delete a user account.
 usermod: Modify user account information.
@@ -84,196 +84,139 @@ sudo: Execute commands with elevated privileges.
 
 
 File and Directory Management
-11.	ls: List directory contents.
-12.	cd: Change directory.
-13.	pwd: Print working directory.
-14.	mkdir: Create a directory.
-15.	rmdir: Remove an empty directory.
-16.	rm: Remove files or directories.
-17.	cp: Copy files or directories.
-18.	mv: Move or rename files and directories.
-19.	touch: Update file timestamps.
-20.	chmod: Change file permissions.
-21.	chown: Change file ownership.
-22.	chattr: Change file attributes.
-23.	ln: Create symbolic links.
-24.	find: Find files based on criteria.
-25.	locate: Find files using a database.
-26.	grep: Search for patterns in files.
-27.	sed: Stream editor for text manipulation.
-28.	awk: Text processing language.
-29.	cut: Extract columns from text.
-30.	paste: Merge lines of text files.
-31.	sort: Sort lines of text.
-32.	uniq: Filter out repeated lines.
-33.	wc: Count words, lines, and characters in a file.
-34.	diff: Compare files line by line.
-35.	patch: Apply patches to files.
-36.	head: Display the first few lines of a file.
-37.	tail: Display the last few lines of a file.
-38.	less: View files one page at a time.
-39.	more: Similar to less, but with fewer features.
-40.	cat: Concatenate and display files.
-41.	tac: Concatenate and display files in reverse order.
+----------------------------
+ls: List directory contents.
+cd: Change directory.
+pwd: Print working directory.
+mkdir: Create a directory.
+rmdir: Remove an empty directory.
+rm: Remove files or directories.
+cp: Copy files or directories.
+mv: Move or rename files and directories.
+touch: Update file timestamps.
+chmod: Change file permissions.
+chown: Change file ownership.
+chattr: Change file attributes.
+ln: Create symbolic links.
+find: Find files based on criteria.
+locate: Find files using a database.
+grep: Search for patterns in files.
+sed: Stream editor for text manipulation.
+awk: Text processing language.
+cut: Extract columns from text.
+paste: Merge lines of text files.
+sort: Sort lines of text.
+uniq: Filter out repeated lines.
+wc: Count words, lines, and characters in a file.
+diff: Compare files line by line.
+patch: Apply patches to files.
+head: Display the first few lines of a file.
+tail: Display the last few lines of a file.
+less: View files one page at a time.
+more: Similar to less, but with fewer features.
+cat: Concatenate and display files.
+tac: Concatenate and display files in reverse order.
+
 Text Editing
-42.	vi/vim: Powerful text editor.
-43.	nano: Simple text editor.
-44.	emacs: Advanced text editor.
+-----------
+vi/vim: Powerful text editor.
+nano: Simple text editor.
+emacs: Advanced text editor.
+
 System Information and Monitoring
-45.	top: Display system processes.
-46.	htop: Interactive process viewer.
-47.	vmstat: Show system memory, processes, interrupts, paging, block I/O, and CPU info.
-48.	mpstat: Monitor per-processor statistics.
-49.	iostat: Monitor block I/O statistics.
-50.	netstat: Show network statistics.
-51.	ifconfig: Configure network interfaces.
-52.	ip: Advanced network configuration tool.
-53.	ss: Show socket statistics.
-54.	lsof: List open files.
-55.	free: Display system memory usage.
-56.	df: Display disk usage.
-57.	du: Estimate disk space usage.
-58.	uptime: Show system uptime and load average.
-59.	date: Display or set system date and time.
-60.	cal: Display a calendar.
+--------------------------------
+top: Display system processes.
+htop: Interactive process viewer.
+vmstat: Show system memory, processes, interrupts, paging, block I/O, and CPU info.
+mpstat: Monitor per-processor statistics.
+iostat: Monitor block I/O statistics.
+netstat: Show network statistics.
+ifconfig: Configure network interfaces.
+ip: Advanced network configuration tool.
+ss: Show socket statistics.
+lsof: List open files.
+free: Display system memory usage.
+df: Display disk usage.
+du: Estimate disk space usage.
+uptime: Show system uptime and load average.
+date: Display or set system date and time.
+cal: Display a calendar.
+
 System Administration
-61.	lspci:  List all PCI devices.
-62.	lsusb: List USB devices.
-63.	passwd: Change passwords.
-64.	systemctl: Control systemd services.
-65.	journalctl: View systemd journal logs.
-66.	crontab: Schedule tasks to run periodically.
-67.	at: Schedule one-time commands to run at a specific time.
-68.	dmesg: Print kernel ring buffer.
-69.	mkfs: Create a filesystem.
-70.	fsck: Check and repair a filesystem.
-71.	mount: Mount a filesystem.
-72.	umount: Unmount a filesystem.
-73.	fdisk: Partition disk drives.
-74.	parted: Partition disk drives (more advanced).
-75.	blkid: Print block device information.
-76.	dd: Copy and convert files.
-77.	tar: Archive and compress files.
-78.	gzip/gunzip: Compress and decompress files.
-79.	bzip2/bunzip2: Another compression utility.
-80.	xz/unxz: Another compression utility.
-81.	zip/unzip: Zip and unzip files.
-82.	unrar: Extract RAR archives.
-83.	7z: 7-Zip file archiver.
-84.	screen: Terminal multiplexer.
-85.	tmux: Terminal multiplexer.
-86.	nohup: Run commands in the background.
-87.	nice/renice: Change process priority.
-88.	sleep: Pause execution for a specified time.
-89.	wait: Wait for background jobs to finish.
-90.	kill: Send signals to processes.
-91.	killall: Kill all processes matching a name.
-92.	pkill: Kill processes based on a pattern.
-93.	bg: Send a job to the background.
-94.	fg: Bring a job to the foreground.
-95.	jobs: List background jobs.
-96.	nc: Netcat, a network utility for reading from and writing to network connections.
-97.	ping: Check network connectivity.
-98.	traceroute: Trace the route packets take to a destination.
-99.	nslookup: Query Domain Name System (DNS) servers.
-100.	dig: DNS lookup utility.
-101.	xargs – Build and execute commands from standard input (eg: pipe find results into other commands).
-
-
-102.	watch – Run a command repeatedly and display its changing output over time.
-
-
-103.	alias – Create a shortcut for a longer command.
-
-
-104.	unalias – Remove a previously defined alias.
-
-
-105.	whereis – Locate the binary, source and manual page for a command.
-
-
-106.	strace – Trace system calls and signals used by a process (good for debugging).
-
-
-107.	jq – Process JSON data on the command line.
-
-
-108.	tcpdump – Capture and display network packets for troubleshooting network issues.
-
-
-109.	iftop – Monitor real-time bandwidth usage per interface/host.
-
-
-110.	rsync – Sync files/directories locally or over network (efficient for backups).
-
-
-111.	umask – Set default file creation permissions for new files/directories.
-
-
-112.	chroot – Change the root directory for a process (useful for rescue & isolation).
-
-
-113.	trap – Define shell script actions when signals are received (for cleanup, etc).
-
-
-114.	tee – Read from standard input and write to standard output and to files.
-
-
-115.	disown – Remove a job from shell’s job-control so it won’t receive SIGHUP after logout.
-
-
-116.	env – Run a command in a modified environment or display environment variables.
-
-
-117.	export – Set environment variables for current session or children processes.
-
-
-118.	unset – Remove environment variables from current shell.
-
-
-119.	sysctl – Modify kernel parameters at runtime.
-
-
-120.	xfs_growfs / resize2fs / lvextend – Expand filesystems or LVM volumes online (depending on file system type).
-
-
-121.	lsof +D <dir> – List open files under a directory tree (helps find what’s blocking unmount, etc).
-
-
-122.	ncdu – Interactive disk usage explorer (useful on head-less servers).
-
-
-123.	vgdisplay / pvdisplay / lvdisplay – Display LVM volume group / physical volume / logical volume details.
-
-
-124.	ss -tunlp – Show listening sockets with process names (modern replacement/enhancement for netstat).
-
-
-125.	nmcli – Command-line tool to manage network settings via NetworkManager.
-
-
-126.	hdparm – Show or set SATA/IDE drive parameters (for hardware/IO tuning).
-
-
-127.	smartctl – Monitor SMART status of drives (for early detection of disk failure).
-
-
-128.	pgrep: Pattern match to find process IDs
-
-
-129.	apropos – Search the manual page names & descriptions for keywords.
-
-130.	ipcrm – Remove System V interprocess communication objects (shared memory, message queues, semaphores).
-
-
-
-
-
-
-
-
-
-
+--------------------
+lspci:  List all PCI devices.
+lsusb: List USB devices.
+passwd: Change passwords.
+systemctl: Control systemd services.
+journalctl: View systemd journal logs.
+crontab: Schedule tasks to run periodically.
+at: Schedule one-time commands to run at a specific time.
+dmesg: Print kernel ring buffer.
+mkfs: Create a filesystem.
+fsck: Check and repair a filesystem.
+mount: Mount a filesystem.
+umount: Unmount a filesystem.
+fdisk: Partition disk drives.
+parted: Partition disk drives (more advanced).
+blkid: Print block device information.
+dd: Copy and convert files.
+tar: Archive and compress files.
+gzip/gunzip: Compress and decompress files.
+bzip2/bunzip2: Another compression utility.
+xz/unxz: Another compression utility.
+zip/unzip: Zip and unzip files.
+unrar: Extract RAR archives.
+7z: 7-Zip file archiver.
+screen: Terminal multiplexer.
+tmux: Terminal multiplexer.
+nohup: Run commands in the background.
+nice/renice: Change process priority.
+sleep: Pause execution for a specified time.
+wait: Wait for background jobs to finish.
+kill: Send signals to processes.
+killall: Kill all processes matching a name.
+pkill: Kill processes based on a pattern.
+bg: Send a job to the background.
+fg: Bring a job to the foreground.
+jobs: List background jobs.
+nc: Netcat, a network utility for reading from and writing to network connections.
+ping: Check network connectivity.
+traceroute: Trace the route packets take to a destination.
+nslookup: Query Domain Name System (DNS) servers.
+dig: DNS lookup utility.
+xargs – Build and execute commands from standard input (eg: pipe find results into other commands).
+
+Other Misc Command
+-------------------
+watch – Run a command repeatedly and display its changing output over time.
+alias – Create a shortcut for a longer command.
+unalias – Remove a previously defined alias.
+whereis – Locate the binary, source and manual page for a command.
+strace – Trace system calls and signals used by a process (good for debugging).
+jq – Process JSON data on the command line.
+tcpdump – Capture and display network packets for troubleshooting network issues.
+iftop – Monitor real-time bandwidth usage per interface/host.
+rsync – Sync files/directories locally or over network (efficient for backups).
+umask – Set default file creation permissions for new files/directories.
+chroot – Change the root directory for a process (useful for rescue & isolation).
+trap – Define shell script actions when signals are received (for cleanup, etc).
+tee – Read from standard input and write to standard output and to files.
+disown – Remove a job from shell’s job-control so it won’t receive SIGHUP after logout.
+env – Run a command in a modified environment or display environment variables.
+export – Set environment variables for current session or children processes.
+unset – Remove environment variables from current shell.
+sysctl – Modify kernel parameters at runtime.
+xfs_growfs / resize2fs / lvextend – Expand filesystems or LVM volumes online (depending on file system type).
+lsof +D <dir> – List open files under a directory tree (helps find what’s blocking unmount, etc).
+ncdu – Interactive disk usage explorer (useful on head-less servers).
+vgdisplay / pvdisplay / lvdisplay – Display LVM volume group / physical volume / logical volume details.
+ss -tunlp – Show listening sockets with process names (modern replacement/enhancement for netstat).
+nmcli – Command-line tool to manage network settings via NetworkManager.
+hdparm – Show or set SATA/IDE drive parameters (for hardware/IO tuning).
+smartctl – Monitor SMART status of drives (for early detection of disk failure).
+pgrep: Pattern match to find process IDs
+apropos – Search the manual page names & descriptions for keywords.
+ipcrm – Remove System V interprocess communication objects (shared memory, message queues, semaphores).
 
 **************
 File
