@@ -149,18 +149,56 @@ terraform destroy
 
 Terraform creates infrastructure using code.It keeps all environments consistent and version controlled.
 ########################################################
+Ansible:
+----------
 
+YAML Playbook structure:
+-------------------------
 
+- hosts: all
+  tasks:
+   -  name: install package
+      yum:
+         name: httpd
+         state: present
 
+Cmd:
+ansible-playbook -i inventory playbook.yml
 
+Ansible: Automates configurations, package installation and 
+deployments without requiring an agent
+####################################################
 
+CP4i
+-----------------
+Componets:
+Ace 
+MQ
+APIC
+DataPower
 
+Deploy and manage CP4I components(ACE,MQ,APIC) on Openshift 
+using Operators and Helm. I build CI/CD automation for API deployments, queue manager configs, and ACE applications
 
+#########################################################
 
+Monitoring 
+Prometheus
+Grafana
 
+Metrics 
+Dashboards
+Alerts
+Pod resource usage
 
+Monitor pods, deployments, ACE servers, MQ metrics and create 
+alerts for failures or high CPU/memory
 
+####################################################
 
+Security (Trivy, Secrets, PSP)
+
+I enforce container scanning, RBAC, Secrets ecyption, image polocoes and Pod Security standards for secure workloads
 
 
 
