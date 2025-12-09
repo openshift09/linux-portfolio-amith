@@ -1,0 +1,11 @@
+ls
+cd
+mkdir
+chmod
+top
+ps -ef
+kill -9
+curl
+ping
+
+
